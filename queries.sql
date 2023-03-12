@@ -2,6 +2,9 @@
 -- id INTEGER, employer VARCHAL(100), name VARCHAL(100), skills VARCHAL(100)
 
 -- Part 2: Test it with SQL
+SELECT name
+FROM employer
+WHERE location = "St. Louis City";
 
 -- Part 3: Test it with SQL
 

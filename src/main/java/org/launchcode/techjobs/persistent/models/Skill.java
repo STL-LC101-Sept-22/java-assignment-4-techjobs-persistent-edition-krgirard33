@@ -2,7 +2,6 @@ package org.launchcode.techjobs.persistent.models;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.Size;
-import java.util.Objects;
 
 @Entity
 public class Skill extends AbstractEntity {
@@ -10,12 +9,12 @@ public class Skill extends AbstractEntity {
     @Size(max=255, message="Description is limited to 255 characters.")
     private String description;
 
-    public Skill() {}
-
     public Skill(@Size(max=255, message="Description is limited to 255 characters.")String description) {
         super();
         this.description = description;
     }
+
+    public Skill() {}
 
     public String getDescription() {
         return description;
